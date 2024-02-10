@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9c491b8531eec05ba41a11d9276a5749",
+    "content-hash": "737adf1e087d8dc320b61e340d00977a",
     "packages": [
         {
             "name": "brick/math",
@@ -3183,6 +3183,67 @@
                 }
             ],
             "time": "2023-11-08T05:53:05+00:00"
+        },
+        {
+            "name": "sajed-zarinpour/spotplayer",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sajed-zarrinpour/spotplayer.git",
+                "reference": "68a0271ac1d62182d378e37dc2997f17fc86aef3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sajed-zarrinpour/spotplayer/zipball/68a0271ac1d62182d378e37dc2997f17fc86aef3",
+                "reference": "68a0271ac1d62182d378e37dc2997f17fc86aef3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "SajedZarinpour\\SpotPlayer\\Providers\\SpotPlayerServiceProvider"
+                    ],
+                    "aliases": {
+                        "SpotPlayer": "SajedZarinpour\\SpotPlayer\\Facades\\SpotPlayer"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Helpers/helpers.php"
+                ],
+                "psr-4": {
+                    "SajedZarinpour\\SpotPlayer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sajed Zarinpour",
+                    "email": "sajed.zarinpour@gmail.com"
+                }
+            ],
+            "description": "A wrapper for spotplayer.ir video service (DRM) API.",
+            "homepage": "https://github.com/sajed-zarrinpour/spotplayer/",
+            "keywords": [
+                "library",
+                "spotplayer"
+            ],
+            "support": {
+                "docs": "https://sajed-zarrinpour.github.io/docs.spotplayer/",
+                "issues": "https://github.com/sajed-zarrinpour/spotplayer/issues",
+                "rss": "https://github.com/sajed-zarrinpour/spotplayer/releases.atom",
+                "security": "https://github.com/sajed-zarrinpour/spotplayer/security/advisories",
+                "source": "https://github.com/sajed-zarrinpour/spotplayer/"
+            },
+            "time": "2024-02-09T21:35:24+00:00"
         },
         {
             "name": "symfony/console",
