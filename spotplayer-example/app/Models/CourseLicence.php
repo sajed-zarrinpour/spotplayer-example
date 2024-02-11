@@ -15,4 +15,14 @@ class CourseLicence extends Model
      * @var string
      */
     protected $table = 'sp_course_licences';
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'licence_id',
+        'course_id',
+    ];
 }

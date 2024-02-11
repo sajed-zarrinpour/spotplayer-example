@@ -20,6 +20,16 @@ class Course extends Model
     protected $table = 'sp_courses';
 
     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'courseId',
+        'author_id',
+    ];
+   
+    /**
      * The licences that belong to the course.
      */
     public function licences(): BelongsToMany

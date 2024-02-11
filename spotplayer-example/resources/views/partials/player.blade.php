@@ -11,26 +11,8 @@
     }
 </style>
 
-<section class="spot-section">
-    {{$courseDetails['name']}}
-    <div id="episodes">
-        <h3>ویدئو های این کلاس</h3>
-        <ul>
-            @foreach ($courseDetails['items'] as $item)
-                @if ($item['type']=='vid')
-                    <li>
-                        <a href="#" onclick="play(
-                        '{{$licence->licenceKey}}',
-                        '{{$courseDetails['_id']}}',
-                        '{{$item['_id']}}'
-                        )">{{$item['name']}}</a>
-                    </li>
-                @endif
-            @endforeach
-            <a href="#" onclick="stop()">توقف پخش</a>
-        </ul>
-    </div>
-
+<section>
+    
     <div id="player"></div>
 
 </section>
@@ -38,7 +20,8 @@
 <script src="https://app.spotplayer.ir/assets/js/app-api.js"></script>
 <script type="application/javascript">
     (function() {
-        window.sp = new SpotPlayer(document.getElementById('player'), '/spotx', false);
+        /* set the third parameter to false if you dont want the play list in the player. */
+        window.sp = new SpotPlayer(document.getElementById('player'), '/spotx', true);
     })();
 
     async function play(key, courseId, episodeId){

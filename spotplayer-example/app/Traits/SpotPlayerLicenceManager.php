@@ -3,12 +3,13 @@
 namespace App\Traits;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
-use Illuminate\Database\Eloquent\Collection;
 
-use SajedZarinpour\Spotplayer\Models\Licence;
-use SajedZarinpour\Spotplayer\Models\Course;
+use App\Models\Licence;
+use App\Models\Course;
+
 trait SpotPlayerLicenceManager{
     /**
      * Get the licences for the user.
